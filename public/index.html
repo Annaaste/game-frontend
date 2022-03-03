@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/index.css">
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>Game-Frontend</h1>
-        <div id="app" />
-        <button onclick="age()">Click me</button>
-        <script src="/js/index.js"></script>
-        
-    </body>
-</html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-man</title>
+    <link rel="stylesheet" href="style.css"></link>
     
+    <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <div class="grid"></div>
+
+    <h3>Score:<span id="score">0</span></h3>
+
+    <form id="myform">
+      Your name:
+          <input name="player_name" maxlength="20" class="formStyle" type="text" id="player_name" placeholder="Type Your Name" required>
+          <br>Your score:
+          <input name="playerscore" class="formStyle" type="number" value=0 id="playerscore" readonly></input><br>
+          <button onclick="submitHighscore()" type="submit" class="formStyle" id="formButton">End Game</button>
+  </form>
+  
+  </body>
+</html>

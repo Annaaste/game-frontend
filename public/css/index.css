@@ -1,0 +1,82 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+    height: 560px;
+    border: solid black;
+}
+  
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.pac-dot {
+    background-color: darkslategray;   
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+.wall {
+    background-color: aquamarine;
+}
+
+.power-pellet {
+    background-color: hotpink;
+    border-radius: 10px;
+}
+
+.blinky {
+    background-color: red;
+}
+
+.pinky {
+    background-color: pink;
+}
+
+.inky {
+    background-color: cyan;
+}
+
+.clyde {
+    background-color: lavender;     
+}
+
+.pac-man {
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+.scared-ghost {
+    background-color: plum;
+}
+
+.greenBut{
+    color: darkblue;
+    padding: 12px; /* Some padding */
+    background-color: yellow;
+    font-size: 24px;
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 6px; /* Rounded borders */
+    margin: 10px;
+}
+
+#myform{
+    position:absolute;
+    margin-top: 320px;
+    display: none;
+}
+
+.formStyle{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #ccc; 
+    border-radius: 6px; 
+    margin: 10px;
+    font-size: 20px;
+}
+
+#formButton{
+    display: flex;
+    margin: auto;
+}
