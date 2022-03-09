@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+
 
     const scoreDisplay = document.getElementById('score')
     const width = 28
@@ -79,12 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
     //draw pacman onto the board
     let pacmanCurrentIndex = 490
     squares[pacmanCurrentIndex].classList.add('pac-man')
-    //get the coordinates of pacman on the grid with X and Y axis
-    // function getCoordinates(index) {
-    //   return [index % width, Math.floor(index / width)]
-    // }
-  
-    // console.log(getCoordinates(pacmanCurrentIndex))
+    
+   
   
     //move pacman
     function movePacman(e) {
@@ -223,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }, ghost.speed)
     }
 
-      const gameover = document.getElementById("gameover");
+      
 
       const myform = document.getElementById("myform");
       const myformObject = document.forms["myform"];
@@ -258,7 +254,18 @@ document.addEventListener('DOMContentLoaded', () => {
         //function()//{ alert("Game Over"); }, 500)
       }
     }
-  
+
+    function submitHighscore(){
+        playerName = myformObject.elements["player_name"].value;
+        //let data = {"user": playerName, "score": score}
+        
+        //let url ="http://localhost:3001/registerscore?user=" + playerName + "&score=" + score;
+        let url ="https://game-backend.herokuapp.com/registerscore?user=" + playerName + "&score=" + score;
     
-})
+        var xhr = new XMLHttpRequest()
+         xhr.open("GET", url);
+    
+        xhr.send()
+    }   
+
   

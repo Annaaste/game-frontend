@@ -4,12 +4,13 @@
     width: 560px;
     height: 560px;
     border: solid black;
+    
 }
-  
 .grid div {
     width: 20px;
     height: 20px;
-}
+} 
+
 
 .pac-dot {
     background-color: darkslategray;   
@@ -27,7 +28,7 @@
 }
 
 .blinky {
-    background-color: red;
+    background-color: coral;
 }
 
 .pinky {
@@ -51,22 +52,6 @@
     background-color: plum;
 }
 
-.greenBut{
-    color: darkblue;
-    padding: 12px; /* Some padding */
-    background-color: yellow;
-    font-size: 24px;
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 6px; /* Rounded borders */
-    margin: 10px;
-}
-
-#myform{
-    position:absolute;
-    margin-top: 320px;
-    display: none;
-}
-
 .formStyle{
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
@@ -79,4 +64,8 @@
 #formButton{
     display: flex;
     margin: auto;
+}
+
+h3{
+    color: blue;
 }
